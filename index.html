@@ -199,25 +199,14 @@
         #consent .row-btns { margin-top: 8px; }
     </style>
 
-    <!-- Google Analytics : un seul identifiant, et rien n'est mesuré avec cookies sans accord (RGPD) -->
+   <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WXX73P59D"></script>
     <script>
-        window.GA_ID = '40JJ2G-TQGKE';
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        gtag('consent', 'default', {
-            analytics_storage: 'denied',
-            ad_storage: 'denied',
-            ad_user_data: 'denied',
-            ad_personalization: 'denied'
-        });
-        try {
-            if (localStorage.getItem('cbConsent') === 'granted') {
-                gtag('consent', 'update', { analytics_storage: 'granted' });
-            }
-        } catch (e) {}
-        gtag('js', new Date());
-        gtag('config', window.GA_ID);
-    </script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1WXX73P59D');
+    </script
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WXX73P59D"></script>
     
 </head>
